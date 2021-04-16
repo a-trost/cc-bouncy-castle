@@ -19,7 +19,7 @@ export default function Navigation() {
         </nav>
         <a
           href="https://twitch.tv/trostcodes"
-          className="inline-flex items-center px-3 py-1 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0"
+          className="inline-flex items-center px-3 py-1 mt-4 text-base bg-red-100 border-0 rounded focus:outline-none hover:bg-red-200 md:mt-0"
         >
           Follow
           <svg
