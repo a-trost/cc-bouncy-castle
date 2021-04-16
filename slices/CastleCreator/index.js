@@ -3,7 +3,7 @@ import gsap from "gsap";
 import Castle from "./Castle";
 
 const MySlice = ({ slice }) => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0.33);
   const [previousValue, setPreviousValue] = useState(null);
   const tlRef = useRef();
 
@@ -110,35 +110,39 @@ const MySlice = ({ slice }) => {
   };
 
   return (
-    <section>
-      <h2>{slice.primary.heading[0].text}</h2>
+    <section className="castle-creator">
+      <div className="container">
+        <h2 className="h2">{slice.primary.heading[0].text}</h2>
 
-      <div>
-        {/* {slice.items[current].title[0] ? (
+        <div>
+          {/* {slice.items[current].title[0] ? (
           <h3>{slice.items[current].title[0].text} </h3>
         ) : (
           ""
         )} */}
-        {/* {slice.items[current].description[0] ? (
+          {/* {slice.items[current].description[0] ? (
           <p>{slice.items[current].description[0].text}</p>
         ) : (
           ""
         )} */}
-        <Castle castleRef={castleRef} />
+          <Castle castleRef={castleRef} />
+        </div>
+        <div className="input-container">
+          <label>
+            <input
+              type="range"
+              name="slider"
+              id="slider"
+              step="0.33"
+              min={0}
+              max={1}
+              value={value}
+              onChange={(e) => updateCastle(e.target.value)}
+            />
+            <span>Desired Model</span>
+          </label>
+        </div>
       </div>
-      <label className="container">
-        Desired Model
-        <input
-          type="range"
-          name="slider"
-          id="slider"
-          step="0.33"
-          min={0}
-          max={1}
-          value={value}
-          onChange={(e) => updateCastle(e.target.value)}
-        />
-      </label>
     </section>
   );
 };
