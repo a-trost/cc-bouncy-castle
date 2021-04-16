@@ -1,0 +1,29 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SignupForm",
+    "primary": {
+      "heading": [
+        {
+          "type": "paragraph",
+          "text": "Fugiat ullamco amet ullamco minim elit aliqua elit mollit non.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Amet non non est commodo ipsum do do voluptate pariatur velit in aute. Aute aute do excepteur id amet elit qui exercitation.",
+          "spans": []
+        }
+      ],
+      "formLabel": "brand wireless users",
+      "button-text": "integrate bleeding-edge blockchains"
+    },
+    "items": [],
+    "slice_type": "signup_form"
+  }
+]

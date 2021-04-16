@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Balloon";
+  src: url("../public/fonts/Balloon/Balloon.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Balloon-Base";
+  src: url("../public/fonts/Balloon/Balloon-Base.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.h1 {
+  font-size: var(--step-5);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.h2 {
+  font-size: var(--step-4);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.h3 {
+  font-size: var(--step-3);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.h4 {
+  font-size: var(--step-2);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.h5 {
+  font-size: var(--step-1);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.h6 {
+  font-size: var(--step--1);
+  line-height: 1.3;
+  font-family: "Balloon";
+}
+
+.paragraph {
+  font-size: var(--step--1);
+  line-height: 1.5;
+  font-family: "Open Sans";
+}

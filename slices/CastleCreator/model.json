@@ -1,0 +1,46 @@
+{
+  "id": "castle_creator",
+  "type": "SharedSlice",
+  "name": "CastleCreator",
+  "description": "CastleCreator",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CastleCreator",
+      "primary": {
+        "heading": {
+          "config": {
+            "label": "Heading",
+            "placeholder": "Create Your Castle",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "The Platinum",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

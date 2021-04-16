@@ -1,0 +1,69 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CastleCreator",
+    "primary": {
+      "heading": [
+        {
+          "type": "heading2",
+          "text": "Benchmark customized models",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Monetize vertical ROI",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Excepteur ad pariatur sit voluptate minim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Incentivize efficient e-business",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Ea sunt aliquip velit in nulla magna minim velit elit commodo ipsum.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Generate collaborative methodologies",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Amet nostrud excepteur et. Nostrud culpa ex elit nostrud Lorem.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "castle_creator"
+  }
+]

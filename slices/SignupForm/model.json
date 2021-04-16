@@ -1,0 +1,53 @@
+{
+  "id": "signup_form",
+  "type": "SharedSlice",
+  "name": "SignupForm",
+  "description": "SignupForm",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SignupForm",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "",
+            "id": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "formLabel": {
+          "config": {
+            "label": "Form Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "button-text": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "button-text",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
