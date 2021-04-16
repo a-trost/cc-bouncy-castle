@@ -3,22 +3,25 @@ import Logo from "../Logo";
 
 export default function Navigation() {
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <header className="text-gray-600 ">
+      <div className="container flex flex-col flex-wrap items-center max-w-screen-xl p-5 mx-auto md:flex-row">
+        <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
           <Logo width={50} height={39} />
           <span className="ml-3 text-3xl text-blue-800 font-display">
             Inflatable Architects
           </span>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-red-900 text-red-600">About</a>
-          <a className="mr-5 hover:text-green-900 text-green-600">Customize</a>
-          <a className="mr-5 hover:text-blue-900 text-blue-600">Team</a>
-          <a className="mr-5 hover:text-yellow-900 text-yellow-600">Signup</a>
+        <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
+          <a className="mr-5 text-red-600 hover:text-red-900">About</a>
+          <a className="mr-5 text-green-600 hover:text-green-900">Customize</a>
+          <a className="mr-5 text-blue-600 hover:text-blue-900">Team</a>
+          <a className="mr-5 text-yellow-600 hover:text-yellow-900">Signup</a>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
+        <a
+          href="https://twitch.tv/trostcodes"
+          className="inline-flex items-center px-3 py-1 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0"
+        >
+          Follow
           <svg
             fill="none"
             stroke="currentColor"
@@ -30,7 +33,7 @@ export default function Navigation() {
           >
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
+        </a>
       </div>
     </header>
   );
