@@ -1,6 +1,6 @@
 .castle-creator {
   background: var(--blue-50);
-
+  position: relative;
   .container {
     max-width: var(--screen-xl);
     margin: 0 auto;
@@ -8,9 +8,32 @@
   }
 
   .h2 {
-    color: var(--rose-600);
-    // margin-bottom: var(--space-sm);
+    // color: var(--rose-600);
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: var(--step-1);
+    // margin-bottom: var(--space-lg);
+    color: var(--blue-800);
     text-align: center;
+  }
+
+  .h3 {
+    // font-family: "Open Sans";
+    // font-weight: 600;
+    color: var(--rose-600);
+    text-align: center;
+
+    &.size-0 {
+      font-size: var(--step-3);
+    }
+
+    &.size-1 {
+      font-size: var(--step-4);
+    }
+
+    &.size-2 {
+      font-size: var(--step-5);
+    }
   }
 
   .input-container {

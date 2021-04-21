@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import gsap from "gsap";
 import Castle from "./Castle";
+import Credit from "../../components/Credit";
 
 const MySlice = ({ slice }) => {
   const [value, setValue] = useState(0.33);
   const [previousValue, setPreviousValue] = useState(null);
+  // Index for content array from Prismic
+  const [index, setIndex] = useState(0);
+
   const tlRef = useRef();
 
   const castleRef = useCallback((castle) => {
@@ -106,6 +110,7 @@ const MySlice = ({ slice }) => {
 
   const updateCastle = (newValue) => {
     setPreviousValue(value);
+    setIndex(Math.floor(newValue * 3));
     setValue(newValue);
   };
 
@@ -115,16 +120,18 @@ const MySlice = ({ slice }) => {
         <h2 className="h2">{slice.primary.heading[0].text}</h2>
 
         <div>
-          {/* {slice.items[current].title[0] ? (
-          <h3>{slice.items[current].title[0].text} </h3>
-        ) : (
-          ""
-        )} */}
-          {/* {slice.items[current].description[0] ? (
-          <p>{slice.items[current].description[0].text}</p>
-        ) : (
-          ""
-        )} */}
+          {slice.items[index].title[0] ? (
+            <h3 className={`h3 size-${index}`}>
+              The {slice.items[index].title[0].text}{" "}
+            </h3>
+          ) : (
+            ""
+          )}
+          {slice.items[index].description[0] ? (
+            <p>{slice.items[index].description[0].text}</p>
+          ) : (
+            ""
+          )}
           <Castle castleRef={castleRef} />
         </div>
         <div className="input-container">
@@ -143,6 +150,7 @@ const MySlice = ({ slice }) => {
           </label>
         </div>
       </div>
+      <Credit author="Cassie Evans" twitter="https://twitter.com/cassiecodes" />
     </section>
   );
 };
