@@ -3,29 +3,60 @@
   "type": "SharedSlice",
   "name": "TeamMembers",
   "description": "TeamMembers",
-  "variations": [{
-    "id": "default-slice",
-    "name": "Default slice",
-    "docURL": "...",
-    "version": "sktwi1xtmkfgx8626",
-    "description": "TeamMembers",
-    "primary": {
-      "title": {
-        "type": "StructuredText",
-        "config": {
-          "single": "heading1",
-          "label": "Title",
-          "placeholder": "This is where it all begins..."
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TeamMembers",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
         }
       },
-      "description": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Description",
-          "placeholder": "A nice description of your feature"
+      "items": {
+        "photo": {
+          "config": {
+            "label": "Photo",
+            "constraint": {
+              "width": 500,
+              "height": 500
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       }
     }
-  }]
+  ]
 }

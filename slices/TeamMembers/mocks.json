@@ -1,20 +1,80 @@
-[{
-  "id": "default-slice",
-  "name": "Default slice",
-  "docURL": "...",
-  "version": "sktwi1xtmkfgx8626",
-  "description": "TeamMembers",
-  "primary": {
-    "title": [{
-      "type": "heading1",
-      "text": "This is where it all begins...",
-      "spans": []
-    }],
-    "description": [{
-      "type": "paragraph",
-      "text": "start by editing this slice from inside the SliceMachine builder!",
-      "spans": []
-    }]
-  },
-  "slice_type": "team_members"
-}]
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TeamMembers",
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Leverage enterprise experiences",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sunt irure non sint cillum tempor id. Exercitation ullamco tempor eiusmod est enim velit sunt tempor dolore eu. Nulla cupidatat Lorem velit velit eiusmod nulla culpa consectetur aute.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "photo": {
+          "dimensions": {
+            "width": 500,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
+        },
+        "name": "integrate integrated eyeballs",
+        "title": "syndicate proactive niches"
+      },
+      {
+        "photo": {
+          "dimensions": {
+            "width": 500,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
+        },
+        "name": "drive cross-media paradigms",
+        "title": "embrace open-source experiences"
+      },
+      {
+        "photo": {
+          "dimensions": {
+            "width": 500,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
+        },
+        "name": "orchestrate killer web services",
+        "title": "transform customized infomediaries"
+      },
+      {
+        "photo": {
+          "dimensions": {
+            "width": 500,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
+        },
+        "name": "scale customized experiences",
+        "title": "revolutionize world-class interfaces"
+      }
+    ],
+    "slice_type": "team_members"
+  }
+]

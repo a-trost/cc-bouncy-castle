@@ -29,5 +29,32 @@
         }
       }
     }
+  },
+  "TeamMembers": {
+    "items": {
+      "name": {
+        "content": null
+      },
+      "photo": {
+        "content": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37"
+      },
+      "title": {
+        "content": null
+      }
+    },
+    "primary": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }
