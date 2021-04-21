@@ -128,7 +128,9 @@ const MySlice = ({ slice }) => {
             ""
           )}
           {slice.items[index].description[0] ? (
-            <p>{slice.items[index].description[0].text}</p>
+            <p className="description">
+              {slice.items[index].description[0].text}
+            </p>
           ) : (
             ""
           )}

@@ -11,7 +11,7 @@
     // color: var(--rose-600);
     font-family: "Open Sans";
     font-weight: 500;
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     // margin-bottom: var(--space-lg);
     color: var(--blue-800);
     text-align: center;
@@ -34,6 +34,14 @@
     &.size-2 {
       font-size: var(--step-5);
     }
+  }
+
+  .description {
+    text-align: center;
+    font-size: var(--step--2);
+    color: var(--warmGray-600);
+    font-family: "Open Sans";
+    margin-top: var(--space-xs);
   }
 
   .input-container {
