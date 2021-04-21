@@ -1,5 +1,5 @@
 import React from "react";
-import { random, spline } from "@georgedoescode/generative-utils";
+import { random, spline } from "./lib";
 
 export default function Balloon({ index }) {
   const bodyWidth = random(80, 110);
