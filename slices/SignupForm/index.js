@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Credit from "../../components/Credit";
 
 const SignupForm = ({ slice }) => {
   const bounceRef = useRef();
@@ -95,6 +96,7 @@ const SignupForm = ({ slice }) => {
           <div className="inner"></div>
         </div>
       </div>
+      <Credit author="Adam Kuhn" twitter="https://twitter.com/cobra_winfrey" />
     </section>
   );
 };
