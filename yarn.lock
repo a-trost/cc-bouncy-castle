@@ -1099,6 +1099,11 @@
   dependencies:
     purgecss "^3.1.3"
 
+"@georgedoescode/generative-utils@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@georgedoescode/generative-utils/-/generative-utils-1.0.0.tgz#24a0989bfbfe0e09ca9b35a28caebc636f04cc7d"
+  integrity sha512-6Jn+h3tPLgw/gHfNKUAW5nR+F596WiSPL0CLa3TOlUiyMLjS/hswXM/acvt2BWyh3M7Ok+RedSMTM/IN0apxow==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@hapi/accept/-/accept-5.0.1.tgz"

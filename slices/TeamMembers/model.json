@@ -31,17 +31,6 @@
         }
       },
       "items": {
-        "photo": {
-          "config": {
-            "label": "Photo",
-            "constraint": {
-              "width": 500,
-              "height": 500
-            },
-            "thumbnails": []
-          },
-          "type": "Image"
-        },
         "name": {
           "config": {
             "label": "Name",

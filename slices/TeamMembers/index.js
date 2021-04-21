@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText } from "prismic-reactjs";
+import Balloon from "./Balloon";
 
 const MySlice = ({ slice }) => {
   return (
@@ -17,13 +17,8 @@ const MySlice = ({ slice }) => {
           {slice?.items?.map((item, i) => (
             <div className="p-4 lg:w-1/4 md:w-1/2" key={i}>
               <div className="flex flex-col items-center h-full text-center">
-                <img
-                  src={item.photo.url}
-                  alt={item.name}
-                  className="flex-shrink-0 object-cover object-center w-full h-56 mb-4 rounded-lg"
-                />
-
                 <div className="w-full">
+                  <Balloon index={i} />
                   <h2 className="text-lg font-medium text-gray-50 title-font">
                     {item.name}
                   </h2>

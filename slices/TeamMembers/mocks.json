@@ -9,70 +9,38 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Leverage enterprise experiences",
+          "text": "Maximize dot-com networks",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Sunt irure non sint cillum tempor id. Exercitation ullamco tempor eiusmod est enim velit sunt tempor dolore eu. Nulla cupidatat Lorem velit velit eiusmod nulla culpa consectetur aute.",
+          "text": "Sit amet nulla cupidatat ullamco proident tempor voluptate ea elit Lorem aute consectetur cupidatat irure. Amet deserunt commodo fugiat mollit adipisicing officia nostrud proident id Lorem ad in. Dolore officia ea irure laboris consequat esse.",
           "spans": []
         }
       ]
     },
     "items": [
       {
-        "photo": {
-          "dimensions": {
-            "width": 500,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
-        },
-        "name": "integrate integrated eyeballs",
-        "title": "syndicate proactive niches"
+        "name": "morph visionary web-readiness",
+        "title": "enable global blockchains"
       },
       {
-        "photo": {
-          "dimensions": {
-            "width": 500,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
-        },
-        "name": "drive cross-media paradigms",
-        "title": "embrace open-source experiences"
+        "name": "visualize user-centric solutions",
+        "title": "implement collaborative technologies"
       },
       {
-        "photo": {
-          "dimensions": {
-            "width": 500,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
-        },
-        "name": "orchestrate killer web services",
-        "title": "transform customized infomediaries"
+        "name": "seize one-to-one applications",
+        "title": "aggregate holistic platforms"
       },
       {
-        "photo": {
-          "dimensions": {
-            "width": 500,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?w=500&h=500&fit=crop"
-        },
-        "name": "scale customized experiences",
-        "title": "revolutionize world-class interfaces"
+        "name": "aggregate strategic bandwidth",
+        "title": "e-enable synergistic content"
+      },
+      {
+        "name": "incubate cross-media functionalities",
+        "title": "e-enable interactive functionalities"
       }
     ],
     "slice_type": "team_members"
