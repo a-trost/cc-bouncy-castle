@@ -1,9 +1,10 @@
 import React from "react";
 import Balloon from "./Balloon";
+import Credit from "../../components/Credit";
 
 const MySlice = ({ slice }) => {
   return (
-    <section className="bg-gray-700 text-gray-1 body-font">
+    <section className="relative bg-gray-700 text-gray-1 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col w-full mb-20 text-center">
           <h1 className="mb-4 text-2xl font-medium text-gray-50 title-font">
@@ -29,6 +30,10 @@ const MySlice = ({ slice }) => {
           ))}
         </div>
       </div>
+      <Credit
+        author="George Francis"
+        twitter="https://twitter.com/georgedoescode"
+      />
     </section>
   );
 };
