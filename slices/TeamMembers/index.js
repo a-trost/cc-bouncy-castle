@@ -2,7 +2,6 @@ import React from "react";
 import { RichText } from "prismic-reactjs";
 
 const MySlice = ({ slice }) => {
-  console.log(slice.primary);
   return (
     <section className="bg-gray-700 text-gray-1 body-font">
       <div className="container px-5 py-24 mx-auto">
