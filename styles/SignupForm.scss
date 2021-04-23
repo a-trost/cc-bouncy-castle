@@ -61,6 +61,7 @@
       p {
         transform: translateX(35px);
         > span {
+          color: red;
           animation-play-state: running;
           &:last-of-type {
             &:after {
@@ -344,10 +345,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          transform: translate(-50%, -50%);
           animation: flip calc(0.45s * var(--height)) ease-in-out 5,
             tumble 0.5s ease-in-out infinite;
-          transform: rotate(0deg) translate(-50%, -50%);
+          transform: rotate(0deg) translate(-50%, 100%);
           transform-style: preserve-3d;
           @keyframes tumble {
             from {
@@ -435,7 +435,7 @@
             opacity: 0;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(10%);
             right: -15px;
             color: #000;
             animation: blinking 1s linear infinite;
@@ -474,7 +474,7 @@
     &:before {
       content: "EMAIL";
       font-family: "Balloon-Base";
-      top: -75px;
+      top: -85px;
       left: 0;
       color: var(--rose-500);
       font-size: 50px;
