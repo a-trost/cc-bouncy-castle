@@ -70,14 +70,12 @@ export default function Balloon({ index }) {
         d={stringPathData}
         stroke={colorDark}
         fill="none"
-        transformOrigin="center center"
         transform={`translate(${100} ${100 + bodyHeight / 2 - 30 / 2})`}
       />
       <path
         d={tiePathData}
         fill={color}
         stroke={colorDark}
-        transformOrigin="center center"
         transform={`translate(${100 - tieSize / 2} ${
           100 + bodyHeight / 2 - tieSize / 2
         })`}
