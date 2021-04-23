@@ -1,0 +1,60 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ImageGallery",
+    "primary": {
+      "title": "expedite holistic blockchains",
+      "description": "Here's my paragraph and i hope it says some interesting things"
+    },
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 800,
+            "height": 600
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 800,
+            "height": 600
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=800&h=600&fit=crop"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 800,
+            "height": 600
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=800&h=600&fit=crop"
+        }
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 800,
+            "height": 600
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=800&h=600&fit=crop"
+        }
+      }
+    ],
+    "slice_type": "image_gallery"
+  }
+]

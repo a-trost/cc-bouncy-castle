@@ -53,5 +53,15 @@
         }
       }
     }
+  },
+  "ImageGallery": {
+    "primary": {
+      "description": {
+        "content": "Here's my paragraph and i hope it says some interesting things"
+      },
+      "title": {
+        "content": null
+      }
+    }
   }
 }
