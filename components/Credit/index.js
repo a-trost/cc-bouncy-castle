@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCodepen, FaYoutube } from "react-icons/fa";
 
 export default function Credit({
   author,
@@ -22,24 +23,24 @@ export default function Credit({
           {youtube && (
             <p>
               <a
-                className="block mt-1 font-bold text-blue-600"
+                className="flex mt-3 font-bold text-blue-600"
                 target="_blank"
                 rel="noreferrer"
                 href={youtube}
               >
-                Watch how they built it.
+                <FaYoutube className="mr-2" /> Watch how they built it.
               </a>
             </p>
           )}
           {codepen && (
             <p>
               <a
-                className="block mt-1 font-bold text-blue-600"
+                className="flex mt-1 font-bold text-blue-600"
                 href={codepen}
                 target="_blank"
                 rel="noreferrer"
               >
-                View the CodePen version.
+                <FaCodepen className="mr-2" /> View the CodePen version.
               </a>
             </p>
           )}
