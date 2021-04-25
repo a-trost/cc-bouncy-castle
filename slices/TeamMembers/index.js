@@ -27,9 +27,9 @@ const MySlice = ({ slice }) => {
     <section className="relative bg-white text-gray-1 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col w-full mb-10 text-center">
-          <h1 className="mb-4 text-4xl font-medium text-green-700 font-display title-font">
+          <h2 className="mb-4 text-4xl font-medium text-green-700 font-display title-font">
             {slice.primary.title[0]?.text}
-          </h1>
+          </h2>
           <p className="max-w-xl mx-auto text-base leading-relaxed text-gray-800">
             {slice.primary.description[0]?.text}
           </p>
@@ -41,10 +41,10 @@ const MySlice = ({ slice }) => {
               <div className="flex flex-col items-center h-full text-center">
                 <div className="w-full">
                   <Balloon index={i} />
-                  <h2 className="text-xl font-medium text-blue-700 title-font">
+                  <p className="mt-2 text-xl font-medium text-blue-700 title-font">
                     {item.name}
-                  </h2>
-                  <h3 className="mb-3 text-gray-500">{item.title}</h3>
+                  </p>
+                  <p className="mb-3 text-gray-500">{item.title}</p>
                 </div>
               </div>
             </div>
