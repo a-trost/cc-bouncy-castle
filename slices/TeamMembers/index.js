@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Balloon from "./Balloon";
 import Credit from "../../components/Credit";
+import Buttons from "./Buttons";
+import faker from "faker";
 
 const MySlice = ({ slice }) => {
+  const [team, setTeam] = useState(slice.items);
+
+  const handleHire = () => {
+    const name = faker.name.findName();
+    const title = faker.name.jobTitle();
+    setTeam([...team, { name, title }]);
+  };
+  const handleFire = () => {
+    if (team.length === 0) return;
+    setTeam(team.slice(0, team.length - 1));
+  };
+
   return (
     <section className="relative bg-gray-700 text-gray-1 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col w-full mb-20 text-center">
+        <div className="flex flex-col w-full mb-10 text-center">
           <h1 className="mb-4 text-2xl font-medium text-gray-50 title-font">
             {slice.primary.title[0]?.text}
           </h1>
           <p className="max-w-xl mx-auto text-base leading-relaxed text-gray-200">
             {slice.primary.description[0]?.text}
           </p>
+          <Buttons onHire={handleHire} onFire={handleFire} />
         </div>
         <div className="flex flex-wrap -m-4">
-          {slice?.items?.map((item, i) => (
+          {team.map((item, i) => (
             <div className="p-4 lg:w-1/4 md:w-1/2" key={i}>
               <div className="flex flex-col items-center h-full text-center">
                 <div className="w-full">
