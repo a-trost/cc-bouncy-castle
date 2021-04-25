@@ -10,6 +10,12 @@ const MySlice = ({ slice }) => {
   const handleHire = () => {
     const name = faker.name.findName();
     const title = faker.name.jobTitle();
+    /*
+
+     To stop the balloons from changing on rerender, you could move the 
+     creation of their random values here to lock them in.
+    
+     */
     setTeam([...team, { name, title }]);
   };
   const handleFire = () => {
@@ -18,13 +24,13 @@ const MySlice = ({ slice }) => {
   };
 
   return (
-    <section className="relative bg-gray-700 text-gray-1 body-font">
+    <section className="relative bg-white text-gray-1 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col w-full mb-10 text-center">
-          <h1 className="mb-4 text-2xl font-medium text-gray-50 title-font">
+          <h1 className="mb-4 text-4xl font-medium text-green-700 font-display title-font">
             {slice.primary.title[0]?.text}
           </h1>
-          <p className="max-w-xl mx-auto text-base leading-relaxed text-gray-200">
+          <p className="max-w-xl mx-auto text-base leading-relaxed text-gray-800">
             {slice.primary.description[0]?.text}
           </p>
           <Buttons onHire={handleHire} onFire={handleFire} />
@@ -35,10 +41,10 @@ const MySlice = ({ slice }) => {
               <div className="flex flex-col items-center h-full text-center">
                 <div className="w-full">
                   <Balloon index={i} />
-                  <h2 className="text-lg font-medium text-gray-50 title-font">
+                  <h2 className="text-xl font-medium text-blue-700 title-font">
                     {item.name}
                   </h2>
-                  <h3 className="mb-3 text-gray-300">{item.title}</h3>
+                  <h3 className="mb-3 text-gray-500">{item.title}</h3>
                 </div>
               </div>
             </div>
