@@ -19,6 +19,8 @@
   "dependencies": {
     "@fontsource/open-sans": "^4.2.2",
     "@georgedoescode/generative-utils": "^1.0.0",
+    "@react-three/cannon": "^1.1.1",
+    "@react-three/fiber": "^6.0.17",
     "faker": "^5.5.3",
     "gsap": "^3.6.1",
     "next": "^10.0.8",
@@ -30,7 +32,8 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-icons": "^4.2.0",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "three": "^0.128.0"
   },
   "devDependencies": {
     "@storybook/preset-scss": "^1.0.3",
