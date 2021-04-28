@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Credit from "../../components/Credit";
 import { Canvas, useLoader } from "@react-three/fiber";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@react-three/cannon";
 import { TextureLoader } from "three";
 
-const Ball = ({ position, fire }) => {
+const Ball = ({ position, fire, rid }) => {
   const [ref, api] = useSphere(() => {
     return {
       mass: 200,
@@ -18,6 +18,11 @@ const Ball = ({ position, fire }) => {
       args: 1,
     };
   });
+
+  const color = useMemo(() => {
+    const colors = ["#ff4411", "#00FF22", "#22AAFF", "#8800FF", "#2266FF"];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }, [rid]);
 
   useEffect(() => {
     if (fire) {
@@ -29,7 +34,7 @@ const Ball = ({ position, fire }) => {
   return (
     <mesh ref={ref}>
       <sphereGeometry args={[1, 16, 16]} />
-      <meshLambertMaterial color="#f00" />
+      <meshLambertMaterial color={color} />
     </mesh>
   );
 };
@@ -107,8 +112,8 @@ const Picture = ({ image }) => {
   );
 };
 
-const Pictures = ({ imageNumber = 0, images }) => {
-  const image = images[imageNumber];
+const Pictures = ({ imageNum = 0, images }) => {
+  const image = images[imageNum];
   return <Picture image={image} />;
 };
 
@@ -142,7 +147,7 @@ const Scene = ({ imageUrls }) => {
           />
         </mesh>
         <BallPit ball={ball} position={position} />
-        <Pictures images={images} />
+        <Pictures images={images} imageNum={imageNum} />
         <Borders />
       </group>
     </Physics>
