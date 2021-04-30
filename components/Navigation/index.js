@@ -16,6 +16,12 @@ export default function Navigation() {
           <a className="mr-5 text-green-600 hover:text-green-900">Customize</a>
           <a className="mr-5 text-blue-600 hover:text-blue-900">Team</a>
           <a className="mr-5 text-yellow-600 hover:text-yellow-900">Signup</a>
+          <a
+            href="https://github.com/a-trost/cc-bouncy-castle"
+            className="mr-5 text-gray-600 hover:text-gray-900"
+          >
+            Github Repo
+          </a>
         </nav>
         <a
           href="https://twitch.tv/trostcodes"
