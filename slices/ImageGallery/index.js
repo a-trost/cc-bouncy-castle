@@ -167,7 +167,7 @@ const MySlice = ({ slice }) => {
   }, []);
 
   return (
-    <section className="relative block h-screen pt-12 text-gray-700 bg-red-200 body-font">
+    <section className="relative block h-screen pt-12 pb-40 text-gray-700 bg-red-200 body-font">
       <h2 className="mb-6 text-5xl text-center text-blue-700 font-display">
         {slice.primary.title}
       </h2>
