@@ -156,7 +156,8 @@ const Scene = ({ imageUrls }) => {
 
 const MySlice = ({ slice }) => {
   let pixelRatio;
-  let images = [];
+
+  console.log(slice);
 
   const imageUrls = slice.items.map((item) => item.image.url);
   useEffect(() => {
@@ -166,7 +167,13 @@ const MySlice = ({ slice }) => {
   }, []);
 
   return (
-    <section className="relative flex h-screen py-24 text-gray-700 body-font">
+    <section className="relative block h-screen pt-12 text-gray-700 bg-red-200 body-font">
+      <h2 className="mb-6 text-5xl text-center text-blue-700 font-display">
+        {slice.primary.title}
+      </h2>
+      <p className="max-w-xl mx-auto mb-12 text-xl text-center">
+        {slice.primary.description}
+      </p>
       <Canvas
         shadows
         camera={{ position: [0, 0, 40], fov: 30 }}
@@ -179,6 +186,7 @@ const MySlice = ({ slice }) => {
           <Scene imageUrls={imageUrls} />
         </React.Suspense>
       </Canvas>
+      <Credit author="Liam Egan" twitter="https://twitter.com/liamegan" />
     </section>
   );
 };
